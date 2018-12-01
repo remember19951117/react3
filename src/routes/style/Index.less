@@ -1,0 +1,74 @@
+.App{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  .Index{
+    position: relative;
+    .title{
+      height:.9rem ;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #ffe136;
+      .shopcaricon{
+        height: .47rem;
+        width: .57rem;
+        background-color: #0f9;
+        img{
+          height: 100%;
+        }
+      }
+      .newsicon{
+        width: .47rem;
+        height: .47rem;
+        background-color: #0f9;
+        img{
+          height: 100%;
+        }
+      }
+      .search{
+        width: 70%;
+        position: relative;
+        >div{
+          position: absolute;
+          top:50%;
+          transform: translateY(-50%);
+        }
+        .forminfo{
+          input{
+            width: 100%;
+            padding: 0 .5rem;
+            height: .47rem;
+            border-radius: .1rem;
+            border: 0 none;
+            font-size: .24rem;
+            color:#141414;
+          }
+        }
+        .searchicon{
+          left: .15rem;
+          width: .24rem;
+          height: .24rem;
+          background-color: red;
+        }
+        .searchclear{
+          right: .15rem;
+          width: .24rem;
+          height: .24rem;
+          background-color: red;
+        }
+        .placeholder{
+          left: .6rem;
+          line-height: .47rem;
+          color: #d5d5d5;
+          font-size: .2rem;
+        }
+      }
+    }
+    .showinfo{
+      height: 3.5rem;
+      overflow: hidden;
+    }
+  }
+}

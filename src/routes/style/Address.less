@@ -1,0 +1,63 @@
+.App{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  .main{
+    position: absolute;
+    top: .94rem;
+    bottom: 1rem;
+    width: 100%;
+    overflow: auto;
+    background-color: #f3f2ec;
+    >div{
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: .3rem;
+      margin-bottom: .2rem;
+      >img{
+        width:auto;
+        height: .35rem;
+        margin: 0 .3rem;
+      }
+      .content{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: .28rem;
+        color:#070707;
+        .top{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height:.8rem;
+        }
+        .menu{
+          width: 1.2rem;
+          align-self: flex-end;
+          display: flex;
+          justify-content:space-between;
+          height: .36rem;
+          margin: .15rem 0;
+          img{
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .menus{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background:linear-gradient(left,#20a3ff,#0973ea);
+    line-height: 1rem;
+    text-align: center;
+    font-size: .3rem;
+    color: #fff;
+  }
+}

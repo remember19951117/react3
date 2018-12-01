@@ -1,0 +1,155 @@
+.App{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f3f2ec;
+  .main{
+    position: absolute;
+    top: .94rem;
+    bottom: 1rem;
+    width: 100%;
+    overflow-y: auto;
+    text-align: center;
+    background-color: #fff;
+    padding-bottom:.5rem;
+    h2{
+      line-height: 1rem;
+      color: #656565;
+      font-size: .35rem;
+    }
+    .money{
+      font-size: .4rem;
+      color: #ff2b2b;
+    }
+    p{
+      text-align: left;
+      font-size: .2rem;
+      color: #656565;
+      padding: .1rem .2rem;
+      .color{
+        color: #ff2b2b;
+      }
+      span{
+        line-height: .4rem;
+      }
+    }
+    >div{
+      height:1rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background: #fff;
+      span{
+        font-size: .25rem;
+        color:#656565;
+      }
+      >span:first-child{
+        padding-left: .3rem;
+        width:1.8rem;
+      }
+      >input{
+          width:70%;
+          height:.67rem;
+          border-radius:.1rem;
+          border: solid .02rem #cacaca;
+          padding: 0 .3rem;
+      }
+      .selectdate{
+        width:75%;
+        clear: both;
+        >div{
+          width:50%;
+          display: flex;
+          justify-content:flex-start;
+          align-items: center;
+          img{
+            width: .3rem;
+            height:.3rem;
+            border:0 none;
+            margin-right: .05rem;
+          }
+          p{
+            .color{
+              font-size: .18rem;
+              color: #fa337c;
+            }
+          }
+        }
+      }
+      .selectpay{
+        width:70%;
+        display: flex;
+        justify-content: space-between;
+        >div{
+          display: flex;
+          justify-content:center;
+          align-items: center;
+          img{
+            width: .3rem;
+            height:.3rem;
+            border:0 none;
+            margin-right: .05rem;
+          }
+
+        }
+      }
+    }
+    .item{
+      height: 1.5rem;
+      p{
+        padding-left: .5rem;
+        span{
+          color: #ff2b2b;
+        }
+      }
+      >div{
+        height: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: #fff;
+        span{
+          font-size: .25rem;
+          color:#656565;
+        }
+        >span:first-child{
+          padding-left: .3rem;
+          width:1.8rem;
+        }
+        >input{
+            width:70%;
+            height:.67rem;
+            border-radius:.1rem;
+            border: solid .02rem #cacaca;
+            padding: 0 .3rem;
+        }
+      }
+    }
+    .cost{
+      display: block;
+      height:.8rem;
+      p{
+        line-height: .8rem;
+        padding-left:.5rem;
+        font-size: .25rem;
+        span{
+          color:#ff2b2b;
+          font-size: .3rem;
+        }
+      }
+    }
+  }
+  .menus{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(left,#20a3ff,#0973ea);
+    line-height: 1rem;
+    text-align: center;
+    font-size: .3rem;
+    word-spacing: .1rem;
+    color: #fff;
+  }
+}

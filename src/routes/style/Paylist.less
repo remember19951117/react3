@@ -1,0 +1,53 @@
+.App{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  .main{
+    position: absolute;
+    top: 1.84rem;
+    bottom:0;
+    width: 100%;
+    background-color: #f3f2ec;
+    padding: .2rem;
+    overflow-y: auto;
+    .box{
+      width: 100%;
+      height: 2.8rem;
+      background-color: #fff;
+      border-radius: .1rem;
+      position: relative;
+      overflow: hidden;
+      padding: 0 .6rem;
+      margin: 0 auto;
+      border-bottom:.07rem solid;
+      margin-bottom: .2rem;
+      padding-top:.2rem;
+      &::before{
+        content: "";
+        position: absolute;
+        top:.6rem;
+        left:-.18rem;
+        width: .36rem;
+        height:.36rem;
+        background-color: #f3f2ec;
+        border-radius: 50%;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        top:.6rem;
+        right:-.18rem;
+        width: .36rem;
+        height:.36rem;
+        background-color: #f3f2ec;
+        border-radius: 50%;
+      }
+      p{
+        line-height: .5rem;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

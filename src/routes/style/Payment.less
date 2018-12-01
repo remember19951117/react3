@@ -1,0 +1,254 @@
+.App{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f3f2ec;
+  .main{
+    position: absolute;
+    top: .94rem;
+    bottom: 1rem;
+    width: 100%;
+    overflow: auto;
+    .addressbox{
+      height:2.14rem;
+      width: 100%;
+      margin:.3rem auto;
+      .add{
+        width: 94%;
+        margin:0 auto;
+        height: 100%;
+        border: .02rem dashed #a4a3a3;
+        border-radius: .15rem;
+        text-align: center;
+        line-height: 2.14rem;
+        font-size: .35rem;
+        color: #a4a3a3;
+      }
+      .address{
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: .3rem;
+        margin-bottom: .2rem;
+        height: 2rem;
+        border-bottom:.07rem solid #20a3ff;
+        >img{
+          width:auto;
+          height: .35rem;
+          margin: 0 .3rem;
+        }
+        .content{
+          width:100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-size: .28rem;
+          color:#070707;
+          .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height:.8rem;
+          }
+          .menu{
+            width: 1.2rem;
+            align-self: flex-end;
+            display: flex;
+            justify-content:space-between;
+            height: .36rem;
+            margin: .15rem 0;
+            img{
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+    .express{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: .8rem;
+      font-size: .25rem;
+      color:#656565;
+      background-color: #fff;
+      padding: 0 .24rem;
+      margin-bottom: .2rem;
+    }
+    .paytype{
+      height: 1rem;
+      display: flex;
+      background-color: #fff;
+      justify-content: flex-start;
+      align-items: center;
+      >span{
+        width: 30%;
+        font-size: .25rem;
+        padding-left: .24rem;
+      }
+      .selectpay{
+        width:70%;
+        display: flex;
+        justify-content:space-around;
+        padding-right: .24rem;
+        >div{
+          display: flex;
+          justify-content:center;
+          align-items: center;
+          img{
+            width: .3rem;
+            height:.3rem;
+            border:0 none;
+            margin-right: .15rem;
+          }
+        }
+      }
+    }
+    .box{
+      padding: 0 .24rem;
+      >h2{
+        font-size: .3rem;
+        color: #070707;
+        padding-left: .46rem;
+        line-height: .8rem;
+        position: relative;
+        &::before{
+          content:"";
+          position: absolute;
+          left: 0;
+          top:50%;
+          width: .26rem;
+          height: .32rem;
+          background:url("../../assets/icon-img/new.png") center no-repeat;
+          background-size: contain;
+          transform: translateY(-50%);
+        }
+      }
+      .flex{
+        display: flex;
+        justify-content: space-between;
+        margin:.2rem 0;
+        .flexItem{
+          width: 3.4;
+          background-color: #fff;
+          border-radius: .1rem;
+          overflow: hidden;
+          .itemimg{
+            width: 3.4rem;
+            height: 3.4rem;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            img{
+              position: absolute;
+              left: 50%;
+              top:50%;
+              transform: translate(-50%,-50%);
+              width:100%;
+              height:100%;
+              border:0 none;
+            }
+          }
+          .iteminfo{
+            p{
+              line-height: .56rem;
+              font-size: .24rem;
+              color: #000;
+              padding:0 .2rem;
+            }
+            p:last-child{
+              padding: 0 .1rem;
+              height: .56rem;
+              span{
+                line-height: .4rem;
+              }
+              span:first-child{
+                float: left;
+                color: #ff6d00;
+              }
+              span:last-child{
+                float: right;
+                font-size: .18rem;
+                color:#999999;
+              }
+            }
+          }
+        }
+      }
+      .flexlist{
+        display: flex;
+        justify-content: space-between;
+        .itemlist{
+          width: 2.14rem;
+          height: 2.14rem;
+          border-radius: .1rem;
+          position: relative;
+          overflow: hidden;
+          background-position: center center;
+          background-size: contain;
+          &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            background-color:rgb(0, 0, 0);
+            opacity: .8;
+            z-index: 1;
+          }
+          .content{
+            position: absolute;
+            width: 100%;
+            top:.1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            color: #fff;
+            padding: .5rem .1rem;
+            p{
+              text-align: center;
+              line-height: .5rem;
+              font-size: .26rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .menus{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    div{
+      width: 60%;
+      font-size: .25rem;
+      color:#070707;
+      line-height: 1rem;
+      span{
+        font-size: .4rem;
+        color:#ff6d00;
+        margin-left: .5rem;
+      }
+    }
+    .con{
+      padding-left: .24rem;
+    }
+    .pay{
+      width: 30%;
+      line-height: 1rem;
+      text-align: center;
+      font-size: .35rem;
+      color:#fff;
+      background: linear-gradient(left,#20a3ff,#0973ea);
+      font-weight: bold;
+    }
+  }
+}

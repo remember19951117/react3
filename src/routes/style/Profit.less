@@ -1,0 +1,90 @@
+.App{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  .info{
+    color:#000;
+    font-size: .3rem;
+    padding: .4rem .6rem;
+    p{
+      line-height: .5rem;
+      span{
+        color: #ff2b2b;
+      }
+    }
+    .profit{
+      color: #656565;
+      font-size: .2rem;
+    }
+  }
+  .list{
+    position: absolute;
+    top: 2rem;
+    width: 100%;
+    bottom: .25rem;
+    overflow: hidden;
+    .menu{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top:.15rem;
+      padding:0 .15rem;
+      div{
+        width: 33%;
+        height: .65rem;
+        background: linear-gradient(left,#20a3ff,#0973ea);
+        color: #fff;
+        font-size: .3rem;
+        text-align: center;
+        line-height: .65rem;
+        border-left:.01rem solid #fff;
+      }
+      div:first-child{
+        border-left:0 none;
+      }
+    }
+    .content{
+      position: absolute;
+      top: .8rem;
+      bottom: .25rem;
+      overflow-y: auto;
+      width: 100%;
+      padding:0 .15rem;
+      >div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+          width:50%;
+          height: .8rem;
+          color: #656565;
+          font-size: .25rem;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          line-height: .4rem;
+          align-items: center;
+          border:.01rem solid #656565;
+          border-top: 0 none;
+        }
+        div:not(:last-of-type){
+          border-right:0 none;
+        }
+      }
+    }
+  }
+  .menus{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(left,#20a3ff,#0973ea);
+    line-height: 1rem;
+    text-align: center;
+    font-size: .3rem;
+    color: #fff;
+  }
+}

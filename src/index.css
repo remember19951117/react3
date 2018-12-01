@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+}
+div h2{
+  margin: 0;
+  padding: 0;
+}
+div h3{
+  margin: 0;
+  padding: 0;
+}
+div p{
+  margin: 0;
+  padding: 0;
+}
+

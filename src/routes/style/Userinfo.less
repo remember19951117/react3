@@ -1,0 +1,54 @@
+.App{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f3ec;
+    padding-top: 0;
+    .main{
+        position: absolute;
+        top: 1.19rem;
+        left: 50%;
+        bottom:.25rem;
+        width: 93%;
+        transform: translateX(-50%);
+        overflow-y:auto;
+        border-radius: .2rem;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding:.2rem .5rem;
+        .card{
+            width: 87%;
+            height: 3.3rem;
+            border: .03rem dashed #c3c1c9;
+            margin:.25rem auto;
+            border-radius: .2rem;
+            overflow: hidden;
+        }
+        p{
+            font-size: .3rem;
+            color: #656565;
+            line-height: .7rem;
+            display: flex;
+            justify-content: space-between;
+            span:nth-child(1){
+                width:35%;
+            }
+            span:nth-child(2){
+                width: 65%;
+                color: #c0c0c0;
+            }
+        }
+        .address{
+            min-height: .7rem;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            span{
+                line-height: .4rem;
+            }
+        }
+    }
+}

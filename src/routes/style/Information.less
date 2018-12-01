@@ -1,0 +1,63 @@
+.App{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f3f2ec;
+  .main{
+    position: absolute;
+    top: 0.94rem;
+    width: 100%;
+    bottom: 1rem;
+    overflow-y: auto;
+    padding: .2rem .5rem;
+    background-color: #fff;
+    .idcard{
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: .3rem;
+      p{
+        width: 28%;
+        line-height: .8rem;;
+        font-size: .28rem;
+        color: #656565;
+        position: relative;
+      }
+      .imgbox{
+        width: 68%;
+        height:2.7rem;
+        border: .03rem dashed #c3c1c9;
+        border-radius: .2rem;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        img{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 50%;
+          top:50%;
+          transform: translate(-50%,-50%);
+          border-radius: .2rem;
+          overflow: hidden;
+        }
+        input{
+          vertical-align: middle;
+          display: none;
+        }
+      }
+    }
+  }
+  .menus{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(left,#20a3ff,#0973ea);
+    line-height: 1rem;
+    text-align: center;
+    font-size: .3rem;
+    color: #fff;
+  }
+}
